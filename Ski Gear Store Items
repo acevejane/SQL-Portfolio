@@ -1,0 +1,27 @@
+CREATE TABLE gear (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER, color INTEGER, quantity INTEGER); 
+
+INSERT INTO gear VALUES (1, "Goggles", 200, "Pink", 5);
+INSERT INTO gear VALUES (2, "Helmet", 400, "Black", 19);
+INSERT INTO gear VALUES (3, "Suit", 1070, "Red", 3);
+INSERT INTO gear VALUES (4, "Gloves", 150, "White", 10);
+INSERT INTO gear VALUES (5, "Mask", 70, "Black", 6);
+INSERT INTO gear VALUES (6, "Poles", 800, "Black", 7);
+INSERT INTO gear VALUES (7, "Skis", 2000, "Black", 4);
+INSERT INTO gear VALUES (8, "Mouthguard", 80, "Gray", 7);
+INSERT INTO gear VALUES (9, "Spikes", 200, "White", 3);
+INSERT INTO gear VALUES (10, "Shoulder pads", 50, "White", 8);
+INSERT INTO gear VALUES (11, "Balaclava", 120, "Black", 3);
+INSERT INTO gear VALUES (12, "Socks", 30, "Gray", 16);
+INSERT INTO gear VALUES (13, "Fleece top", 60, "Black", 20);
+INSERT INTO gear VALUES (14, "Snowboard", 3000, "Red", 2);
+INSERT INTO gear VALUES (15, "Snow jacket", 300, "Black", 5);
+
+--Order all data by its cost. 
+
+SELECT * FROM gear ORDER BY cost;
+
+--Which gear item cost less than 2000 dollars? 
+
+SELECT name, cost
+FROM gear
+WHERE cost > 2000;
